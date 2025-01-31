@@ -1,11 +1,16 @@
 import numpy as np 
 
-np_array = np.array([-8,0,3,14])
+np_array1 = np.array([-8,0,3,14])
+np_array2 = np.array([10,25,4,0])
 
-print(np_array + 10)
-print(np_array - 6)
-print(np_array * 2)
-print(np_array / 5)
-print(np_array // 3)
-print(np_array % 4)
-print(np_array ** 3)
+array3 = np_array1 + np_array2
+array4 = np_array1 - np_array2
+array5 = np_array1 * np_array2
+array6 = np_array1 / np_array2
+array7 = np_array1 ** np_array2
+
+print(array3)
+print(array4)
+print(array5)
+print(array6)
+print(array7)
