@@ -1,10 +1,8 @@
 import numpy as np 
 
 np_array1 = np.array([-8,0,3,14])
-b = 5
+new_array = np_array1[np.newaxis]
+neww_array = new_array[np.newaxis]
 
-print(np_array1 + b)
-print(np_array1 - b)
-print(np_array1 * b)
-print(np_array1 / b)
-print(np_array1 % b)
+print(new_array)
+print(neww_array)
