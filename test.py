@@ -1,9 +1,11 @@
 import numpy as np 
 
-my_list = [20,'66',-4,0]
+np_array = np.array([-8,0,3,14])
 
-np_array_list = np.array(my_list)
-np_array_tuple = np.array(('hello', 100, 200))
-
-print(np_array_list)
-print(np_array_tuple)
+print(np_array + 10)
+print(np_array - 6)
+print(np_array * 2)
+print(np_array / 5)
+print(np_array // 3)
+print(np_array % 4)
+print(np_array ** 3)
