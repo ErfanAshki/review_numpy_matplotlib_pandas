@@ -1,10 +1,9 @@
 import numpy as np 
 
-my_list = [1,3,5,7]
-my_tuple = (4,8,12)
+my_list = [20,'66',-4,0]
 
 np_array_list = np.array(my_list)
-np_array_tuple = np.array(my_tuple)
+np_array_tuple = np.array(('hello', 100, 200))
 
 print(np_array_list)
 print(np_array_tuple)
