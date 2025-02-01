@@ -1,7 +1,7 @@
 import numpy as np 
 
 
-array1 = np.array([[-8,3,11] , [10,0,55], [8,12,-1]])                                                             
-
-print(np.linalg.det(array1))
+print(np.linspace(1,10,5,True))
+print(np.linspace(22,4,8,False))
+print(np.linspace(0,100,num=6))
 
