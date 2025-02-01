@@ -1,8 +1,11 @@
 import numpy as np 
 
 
-array1 = np.array([[-8,3] , [10,0]])                               
+array1 = np.array([[-8,3,11] , [10,0,55], [8,12,-1]])                               
 
-for index, i in np.ndenumerate(array1):
-    print(index , i)
+print(array1[1,1])
+print(array1[0,2])
+print(array1[2,2])
+print(array1[1,0])
+print(array1[0,0])
 
