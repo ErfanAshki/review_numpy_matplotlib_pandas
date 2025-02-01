@@ -1,8 +1,8 @@
 import numpy as np 
 
 
-print(np.arange(1,8))
-print(np.arange(1,8,2))
-print(np.arange(4))
-print(np.arange(0,100,20))
+array1 = np.array([1,2,3,4])
+
+for index, i in np.ndenumerate(array1):
+    print(index , i)
 
