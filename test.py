@@ -1,8 +1,8 @@
 import numpy as np 
 
-array1 = np.array([[[1,3],[5,7],['hi',6]] , [[4,4],['ll',0],[1,10]]])
 
-for array in array1:
-    for i in array:
-        for a in i:
-            print(a)
+print(np.arange(1,8))
+print(np.arange(1,8,2))
+print(np.arange(4))
+print(np.arange(0,100,20))
+
