@@ -1,21 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x1 = np.array((1,2,3))
-y1 = np.array((6,5,4))
-plt.subplot(1,2,1)
-plt.plot(x1, y1)
-plt.title('sales')
-plt.grid()
 
-x2 = np.array((0,3,6))
-y2 = np.array((1,4,7))
-plt.subplot(1,2,2)
-plt.plot(x2, y2)
-plt.title('incomes')
-plt.grid()
+sizes = [2,4,6,8]
+parts = ['training','eating','studying','sleeping']
+my_explode = [0,0.05,0.1,0.15]
+colors = ['green','red','blue','purple']
 
-plt.xlabel('x-axis')
-plt.ylabel('y-axis')
-plt.suptitle('Shop')
+plt.pie(sizes, labels=parts, colors=colors, explode=my_explode, shadow=True, autopct='%1.1f%%')
+plt.legend(title='four exercise')
 plt.show()
