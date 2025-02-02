@@ -1,17 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.arange(4)
-my_marks = [20,18,15,17]
-your_marks = [18,14,20,17]
-bar_width = 0.2
+x = [1,4,5,3,5]
+y = [2,5,2,6,7]
+sizes = [10,50,5,200,100]
 
-p1 = plt.bar(x, my_marks, bar_width, color='red', label='my marks')
-p2 = plt.bar(x + bar_width, your_marks, bar_width, color='blue', label='your marks')
+plt.scatter(x, y, s=sizes, label='point', color='green', marker='o')
 
-plt.xlabel('subjects')
-plt.ylabel('scores')
-plt.title('bar chart scores')
-plt.xticks(x + (bar_width/2) , ('English','Sport','Math','Science'))
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.xlim(0,10)
+plt.ylim(0,10)
+plt.title('scatter chart')
 plt.legend()
 plt.show()
