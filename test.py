@@ -2,29 +2,33 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-x1 = np.arange(0,4 * (np.pi) , 0.1)
-y1 = np.sin(x1)
+def create_plot(option):
+    x = np.arange(-20,20,1)
+    if option == 'daraje1':
+        y = x
+    elif option == 'daraje2':
+        y = x ** 2
+    elif option == 'daraje3':
+        y = x ** 3
+    elif option == 'daraje4':
+        y = x ** 4
+    return x , y 
+
+x , y = create_plot('daraje1')
 plt.subplot(2,2,1)
-plt.plot(x1,y1)
-plt.title('Barometer 1')
-
-x2 = np.arange(0,4 * (np.pi) , 0.5)
-y2 = np.sin(x2)
+plt.plot(x,y,color='red')
+plt.title('daraje1')
+x , y = create_plot('daraje2')
 plt.subplot(2,2,2)
-plt.plot(x2,y2)
-plt.title('Barometer 2')
-
-x3 = np.arange(0,4 * (np.pi) , 1)
-y3 = np.sin(x3)
+plt.plot(x,y,color='blue')
+plt.title('daraje2')
+x , y = create_plot('daraje3')
 plt.subplot(2,2,3)
-plt.plot(x3,y3)
-plt.title('Barometer 3')
-
-x4 = np.arange(0,4 * (np.pi) , 2)
-y4 = np.sin(x4)
+plt.plot(x,y,color='green')
+plt.title('daraje3')
+x , y = create_plot('daraje4')
 plt.subplot(2,2,4)
-plt.plot(x4,y4)
-plt.title('Barometer 4')
-
-plt.suptitle('COS(X)')
+plt.plot(x,y,color='purple')
+plt.title('daraje4')
 plt.show()
+
