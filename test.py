@@ -2,11 +2,29 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-sizes = [2,4,6,8]
-parts = ['training','eating','studying','sleeping']
-my_explode = [0,0.05,0.1,0.15]
-colors = ['green','red','blue','purple']
+x1 = np.arange(0,2 * (np.pi) , 0.1)
+y1 = np.sin(x1)
+plt.subplot(2,2,1)
+plt.plot(x1,y1)
+plt.title('Barometer 1')
 
-plt.pie(sizes, labels=parts, colors=colors, explode=my_explode, shadow=True, autopct='%1.1f%%')
-plt.legend(title='four exercise')
+x2 = np.arange(0,2 * (np.pi) , 0.5)
+y2 = np.sin(x2)
+plt.subplot(2,2,2)
+plt.plot(x2,y2)
+plt.title('Barometer 2')
+
+x3 = np.arange(0,2 * (np.pi) , 1)
+y3 = np.sin(x3)
+plt.subplot(2,2,3)
+plt.plot(x3,y3)
+plt.title('Barometer 3')
+
+x4 = np.arange(0,2 * (np.pi) , 2)
+y4 = np.sin(x4)
+plt.subplot(2,2,4)
+plt.plot(x4,y4)
+plt.title('Barometer 4')
+
+plt.suptitle('SIN(X)')
 plt.show()
