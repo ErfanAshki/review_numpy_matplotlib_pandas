@@ -1,7 +1,13 @@
-import numpy as np 
+import matplotlib.pyplot as plt
 
 
-print(np.linspace(1,10,5,True))
-print(np.linspace(22,4,8,False))
-print(np.linspace(0,100,num=6))
+x = [1,3,5]
+y = [2,4,6]
 
+
+plt.plot(x,y)
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('barometer')
+
+plt.show()
