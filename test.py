@@ -15,6 +15,8 @@ plt.plot(x3,y3, label='line3', linestyle='dotted', color='red', linewidth=5, mar
 
 plt.xlabel('x-axis')
 plt.ylabel('y-axis')
+plt.xlim(-4,10)
+plt.ylim(-2,8)
 plt.title('Three barometer')
 plt.legend()
 
